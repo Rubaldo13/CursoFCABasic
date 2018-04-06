@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Recuerden cambiar el context la ruta que ustedes tengan como context, o simplemente dejarlo como .MainActivity como está a continuacion-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <!--Recuerden poner el id a cada view, es recomendable que ustedes pongan un título en función de lo que hace o
+    hace referencia su view. Ejemplo: Si un botón guarda un dato podrían poner @+id/btnsave-->
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="#0097A7"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/Imgn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Title"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cascada" />
+
+    <EditText
+        android:id="@+id/ETx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Imgn"
+        android:hint="Escribe aquí"
+        android:textColorHint="#000" />
+
+    <Button
+        android:id="@+id/Boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETx"
+        android:background="#396"
+        android:text="Guardar" />
+
+
+</RelativeLayout>
